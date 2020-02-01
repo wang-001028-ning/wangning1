@@ -1,0 +1,231 @@
+1边框
+1.1添加元素的边框
+ <span class="border"></span>
+ 显示所有边框
+ <span class="border-top"></span>
+ 显示上边框
+ <span class="border-right"></span>
+ 显示右边框
+ <span class="border-bottom"></span>
+ 显示下边框
+ <span class="border-left"></span> 
+ 显示左边框
+
+1.2删除元素的边框
+ <span class="border-0"></span>
+ 所有边框宽度为0px
+ <span class="border-top-0"></span>
+ 上边框宽度为0px
+ <span class="border-right-0"></span>
+ 右边框宽度为0px
+ <span class="border-bottom-0"></span>
+ 下边框宽度为0px
+ <span class="border-left-0"></span>
+ 左边框宽度为0px
+
+1.3边框颜色
+ 使用基于主题颜色的实用程序更改边框颜色
+ <span class="border border-primary"></span>
+
+1.4边界半径
+ <img src="..." alt="..." class="rounded">
+ 四边都带有0.25rem的半径
+ <img src="..." alt="..." class="rounded-top">
+ 左上角、右上角都带有0.25rem的半径
+ <img src="..." alt="..." class="rounded-right">
+ 右上角、右下角都带有0.25rem的半径
+ <img src="..." alt="..." class="rounded-bottom">
+ 左下角、右下角都带有0.25rem的半径
+ <img src="..." alt="..." class="rounded-left">
+ 左上角、左上角都带有0.25rem的半径
+ <img src="..." alt="..." class="rounded-circle">
+ 圆形
+ <img src="..." alt="..." class="rounded-pill">
+
+ <img src="..." alt="..." class="rounded-0">
+ 四边都是直角
+
+1.5尺寸
+ <img src="..." alt="..." class="rounded-sm">
+ 更小的边界半径
+ <img src="..." alt="..." class="rounded-lg">
+ 更大的边界半径
+
+2清除浮动(Clearfix)
+ <div class="clearfix">...</div>
+ 为父元素添加.clearfix可以很容易地清除浮动
+
+3关闭图标
+ 使用通用的关闭图标来解除模态框(模态)和警告框(警报)等内容
+ <button type="button" class="close" aria-label="关闭">
+  <span aria-hidden="true">&times;</span>
+ </button>
+
+4颜色
+ 4.1颜色
+ <p class="text-XXX">.text-XXX</p>
+ 设置文本的颜色
+ <p class="text-XXX bg-XXX">.text-XXX</p>
+ 设置文本的颜色以及背景色
+
+5Flex布局
+ <div class="d-flex justify-content-start">...</div>
+ 子盒子的排版为左（上）对齐
+ <div class="d-flex justify-content-end">...</div>
+ 子盒子的排版为右（下）对齐
+ <div class="d-flex justify-content-center">...</div>
+ 子盒子的排版为居中对齐
+ <div class="d-flex justify-content-between">...</div>
+ 子盒子的排版为两端对齐
+ <div class="d-flex justify-content-around">...</div>
+ 子盒子的排版为环绕对齐
+  
+ <div class="d-flex align-items-start">...</div>
+ 左（上）对齐
+ <div class="d-flex align-items-end">...</div>
+ 右（下）对齐
+ <div class="d-flex align-items-center">...</div>
+ 居中对齐
+ <div class="d-flex align-items-baseline">...</div>
+
+ <div class="d-flex align-items-stretch">...</div>
+
+6浮动
+ <div class="float-left">XXXX</div>
+ 左浮动
+ <div class="float-right">XXXXs</div>
+ 右浮动
+ <div class="float-none">XXXX</div>
+ 没有浮动
+
+7图片替换
+ 利用.text-hide类以帮助用背景图像替换元素的文本内容
+ <h1 class="text-hide">Custom heading</h1>
+
+8Overflow
+ <div class="overflow-auto">...</div>
+ 内容超出宽度添加滚动条
+ <div class="overflow-hidden">...</div>
+ 内容超出宽度部分隐藏
+
+9Position
+ <div class="position-static">...</div>
+ positon定位的默认值，没有定位
+ <div class="position-relative">...</div>
+ 相对定位
+ <div class="position-absolute">...</div>
+ 绝对定位
+ <div class="position-fixed">...</div>
+ 固定定位
+ <div class="position-sticky">...</div>
+ 粘性定位
+
+10阴影
+ <div class="shadow-none p-3 mb-5 bg-light rounded">无阴影</div>
+ 无阴影
+ <div class="shadow-sm p-3 mb-5 bg-white rounded">小阴影</div>
+ 小阴影
+ <div class="shadow p-3 mb-5 bg-white rounded">一般阴影</div>
+ 一般阴影
+ <div class="shadow-lg p-3 mb-5 bg-white rounded">大阴影</div>
+ 大阴影
+
+11sizing
+ <div class="w-25 p-3" style="background-color: #eee;">Width 25%</div>
+ 宽度25%
+ <div class="w-50 p-3" style="background-color: #eee;">Width 50%</div>
+ 宽度50%
+ <div class="w-75 p-3" style="background-color: #eee;">Width 75%</div>
+ 宽度75%
+ <div class="w-100 p-3" style="background-color: #eee;">Width 100%</div>
+ 宽度100%
+ <div class="w-auto p-3" style="background-color: #eee;">Width auto</div>
+ 宽度自动
+
+ <div class="h-25 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 25%</div>
+ 高度25%
+ <div class="h-50 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 50%</div>
+ 高度50%
+ <div class="h-75 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 75%</div>
+ 高度75%
+ <div class="h-100 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 100%</div>
+ 高度100%
+ <div class="h-auto d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height auto</div>
+ 高度自动
+
+ max-width: 100%;
+ 最大宽度：100%
+ max-height: 100%;
+ 最大高度：100%
+
+12边距
+ 12.1内边距
+ padding 内边距
+ padding-top 内上边距
+ padding-bottom 内下边距
+ padding-left 内左边距
+ padding-right 内右边距
+
+ 12.2外边距
+ margin 外边距
+ margin-top 外上边距
+ margin-bottom 外下边距
+ margin-left 外左边距
+ margin-right 外右边距
+
+13文本
+ 13.1文本转换
+ <p class="text-lowercase">转为小写的文本。</p>
+ 转为小写的文本。
+ <p class="text-uppercase">转为大写的文本。</p>
+ 转为大写的文本。
+ <p class="text-capitalize">转为首字母大写的文本。</p>
+ 转为首字母大写的文本。
+
+ .text-capitalize只改变每个单词的第一个字母，不影响任何其他字母的大小写.
+ 
+
+ 13.2字体的粗细和斜体
+ <p class="font-weight-bold">Bold text.</p>
+ 粗体文字。
+ <p class="font-weight-bolder">Bolder weight text (relative to the parent element).</p>
+ 更大胆的权重文本(相对于父元素)。
+ <p class="font-weight-normal">Normal weight text.</p>
+ 正常重量文本。
+ <p class="font-weight-light">Light weight text.</p>
+ 重量轻的文字。
+ <p class="font-weight-lighter">Lighter weight text (relative to the parent element).</p>
+ 较轻的文本(相对于父元素)。
+ <p class="font-italic">Italic text.</p>
+ 斜体字。
+
+
+ 13.3等宽字体（单空间）
+.text-monospace类将所选内容更改为等宽字体(单空间字体)
+
+ 13.4重置颜色
+.text-reset类重置文本或链接的颜色，以便从父元素继承颜色属性.
+
+13.5文本装饰
+.text-decoration-none类去除文字的装饰.
+
+
+14垂直对齐
+ <span class="align-baseline">baseline</span>
+ 基线对齐
+ <span class="align-top">top</span>
+ 顶部对齐
+ <span class="align-middle">middle</span>
+ 中间对齐
+ <span class="align-bottom">bottom</span>
+ 底部对齐
+ <span class="align-text-top">text-top</span>
+ 文本顶部对齐
+ <span class="align-text-bottom">text-bottom</span>
+
+
+15 Visibility（能见度）
+ <div class="visible">...</div>
+ 可见
+<div class="invisible">...</div>
+ 不可见
